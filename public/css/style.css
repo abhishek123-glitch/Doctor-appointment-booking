@@ -1,0 +1,57 @@
+body {
+    background: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+div.move {
+    width: 100px;
+    height: 100px;
+    color: #000000;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+    0% {
+        background-color: orange;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: green;
+        color: white;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: red;
+        color: white;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: white;
+        color: black;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: yellow;
+        color: black;
+        left: 0px;
+        top: 0px;
+    }
+}

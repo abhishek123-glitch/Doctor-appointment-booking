@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrapmain.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Doctor Appointment Booking System </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-#FF00FF bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+      <img src="https://cdn.shopify.com/s/files/1/0520/9938/3459/products/MRI-44-01.jpg?v=1648876558" alt="" width="60" height="50">
+               Doctor Appointment Booking System </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class=" d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-md-0 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Admin
+                    </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="/views/loginpage.hbs">Loginpage</a></li>
+                <li><a class="dropdown-item" href="/views/doctorform.hbs">Register The Doctorform</a></li>
+                  <li><a class="dropdown-item" href="/views/patientpage.hbs">Check The Patientlist</a></li>
+                </ul>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/patientpage.hbs">Patient</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/doctorpage.hbs">Doctor</a>
+                    </li>
+                       <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Appointment
+                    </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="/views/doctorlist.hbs">Appointment Doctor</a></li>
+                </ul>
+                </li>
+                  
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="loginpage.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="registerpage.html">Regirstation</a>
+                    </li> -->
+                    <button type="button" class="btn btn-outline-primary navbar btn mx-3"> <a style="text-decoration:none; color:white;" href="/registerpage.hbs">Sign Up</a></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <section class="vh-600" style="background-color: #29c0aef4">
+        <div class="container py-600 h-500">
+            <div class=" justify-content-center align-items-center h-500">
+                
+                    <div class=" no-repeat"style="border-radius: 1rem;">
+   <div class="row row-cols-1 row-cols-md-2 g-2 p-4">
+  <div class="col">
+    <div class="card-group">
+      <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRvY3RvcnxlbnwwfHwwfHw%3D&w=1000&q=80" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px; height: 130px; margin: px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Aditya Gupta/MBBS,MS(surgery)</h4>
+         <h4 class="card-text">Specialist:-Neurologist(barin Specialist)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGRvY3RvcnxlbnwwfHwwfHw%3D&w=1000&q=80" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px; height: 130px; margin: px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Ashish Sabharwal/MBBS,MD</h4>
+         <h4 class="card-text">Specialist:-Urolojist(urinary System)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH5iqxBh6882A/profile-displayphoto-shrink_800_800/0/1653370873568?e=2147483647&v=beta&t=I61CD-H1px76FW54MIh4GkvZXPDyOV_Kmf37LYJwLVQ" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px;  margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Sameer Kaushal/MBBS,MD,D.N.B</h4>
+         <h4 class="card-text">Specialist:-Opthalmologist(eye diseases)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEP_9pfrWdegd6GQo9rK11mzmEIj5E_VJaJjD8Vyv7p54llC4oAJ1WT3qx5AvKXZhR3Q0&usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px;  margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Mukul Mishra/MBBS,MD,DM</h4>
+         <h4 class="card-text">Specialist:-Cardiologist(heart Specialist)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://livedemo00.template-help.com/wt_60036_v1/images/elements-11-270x270.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px;  margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Shaurya's/MBBS,MD</h4>
+         <h4 class="card-text">Specialist:-Dermatologist(skin Specialist)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://livedemo00.template-help.com/wt_60036_v1/images/elements-10-270x270.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px; margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Jasjit Singh</h4>
+         <h4 class="card-text">Specialist:-Pediatrician(babizes and childern)</h4>
+      </div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="card-group">
+      <img src="https://images.jdmagicbox.com/comp/lucknow/f9/0522px522.x522.180823120236.p7f9/catalogue/chaudhary-lung-centre-dr-rakesh-kumar-chaudhary-telibagh-lucknow-respiratory-doctors-5toxloqt78.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px; height: 130px; margin: px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Pradeep Gupta/MBBS,MS(surgery)</h4>
+         <h4 class="card-text">Specialist:-Neurologist(barin Specialist)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWH1CYRgL4vQJSI9D6hFMmxwFVsbqff5xO2g&usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px; height: 130px; margin: px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Shubham Sharma/MBBS,MD</h4>
+         <h4 class="card-text">Specialist:-Urolojist(urinary System)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_c1IDtOzoeOjGV4cc4WxwW5KC7_MgqJgtAA&usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px;  margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.S D Twari/MBBS,MD,D.N.B</h4>
+         <h4 class="card-text">Specialist:-Opthalmologist(eye diseases)</h4>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card-group">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugxpaP3tNL3OgBVEkhKiPKifISsh2lyqroQ&usqp=CAU" jsaction="load:XAeZkd;" jsname="HiaYvf" class="border border-5 border-dark" alt="38,885 Medical Staff Icon Images, Stock Photos & Vectors | Shutterstock" data-noaft="1" style="width: 150px;  margin: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">Doctor</h2>
+        <h4 class="card-text">Name:-Dr.Shuresh Mishra/MBBS,MD,DM</h4>
+         <h4 class="card-text">Specialist:-Cardiologist(heart Specialist)</h4>
+      </div>
+    </div>
+  </div>
+    </section>
+<footer class="bg-light text-center text-white">
+        <div class="text-center p-3" style="background-color: black;">
+            Develop and designed by <b>Abhishek Sharma</b> | © 2022 Copyright
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
+<script src="main.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
